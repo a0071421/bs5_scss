@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600,700);
+@import '~bootstrap/scss/functions';
+@import './helpers/_variables';
+@import '~bootstrap/scss/bootstrap';
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo a {
+  display: block;
+  background-image: url(https://hexschool.github.io/boootstrap5WebLayout/assets/logo.jpg);
+  width: 111px;
+  height: 40px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// btn custom
+
+.btn-primary {
+  color: $gray-600;
+}
+
+.btn-outline-primary {
+  color: $secondary;
+}
+
+.btn-primary-hover:hover {
+  background-color: $red;
+  border-color: $red;
+  color: $white;
+}
+
+.btn-secondary-hover:hover {
+  background-color: $primary;
+  border-color: $primary;
+  color: $secondary;
+  & > i {
+    color: $red;
+  }
+}
+
+// color
+.darkGray {
+  color: $gray-800;
+}
+
+// social-media
+.social-media {
+  display: flex;
+  & > .social-media-icon {
+    width: 30px;
+    height: 30px;
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+// sticky-nav
+.sticky-nav {
+  top: 90px;
+}
+
+.h-nav {
+  height: calc(100vh - 90px);
+}
+
+.nav .active {
+  font-weight: bold;
+  border-bottom: 2px solid $primary;
+}
+
+// accordion
+.accordion {
+  .accordion-button {
+    & > span {
+      color: $gray-600;
+    }
+    &:not(.collapsed) {
+      color: $gray-600;
+      background-color: $white;
+    }
+  }
+}
+
+// background none
+.background-none {
+  background: none;
+}
+
+//
